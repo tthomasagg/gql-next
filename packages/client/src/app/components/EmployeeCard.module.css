@@ -1,0 +1,62 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    color: #777;
+}
+
+.employeeName {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.department {
+    font-weight: normal;
+    font-family:  "Roboto Light";
+}
+
+.hireDate {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+}
+
+.department {
+    font-weight: normal;
+}
+
+.image {
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    height: 80px;
+    width: 80px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta {
+    color: #fff;
+    background-color: #11cf30;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-weight: bold;
+    padding: 10px 25px;
+    display: inline-block;
+    height: fit-content;
+    align-self: center;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-left: auto;
+    text-decoration: none;
+}

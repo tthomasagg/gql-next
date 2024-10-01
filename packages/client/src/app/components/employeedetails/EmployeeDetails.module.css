@@ -1,0 +1,145 @@
+.employeeStatus {
+    color: #fff;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    align-self: flex-end;
+    width: 220px;
+    font-size: 1em;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+}
+
+.inactive {
+    background-color: red;
+}
+
+.active {
+    background-color: #11cf30;
+}
+
+.image {
+    border: 1px solid #aaa;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    margin-right: 15px;
+    position: relative;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: lighter;
+}
+
+.updateDepartmentLabel {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.departmentInput {
+    width: 150px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.hireDate {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.hireDateTitle {
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+.infoWrapper {
+    display: flex;
+    min-width: 450px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.departmentHistory {
+    width: 702px;
+    border: 2px solid #aaa;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.departmentHistory thead {
+    background-color: #ddd;
+    border: 2px solid #aaa;
+}
+
+.departmentHistory thead tr {
+    border: none;
+}
+
+.departmentHistory td, .departmentHistory th {
+    padding: 10px 25px;
+    color: #888;
+}
+
+.departmentHistory th {
+    color: #333;
+}
+
+.departmentHistory tbody {
+    min-height: 300px;
+}
+
+.departmentHistory tr {
+    border-top: 2px solid #aaa;
+}
+
+.updateDepartment {
+    background-color: #11cf30;
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.updateDepartment:disabled {
+    background-color: #ccc;
+ }
+
+.department {
+    margin-top: 30px;
+}
+
+.changeStatusButton {
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: fit-content;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.departmentHistoryWrapper {
+    height: 300px;
+    overflow: auto;
+}

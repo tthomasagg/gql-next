@@ -1,0 +1,49 @@
+input DeleteEmployeeInput {
+    id: ID!
+}
+
+input DepartmentInput {
+    id: ID!
+}
+
+input UpdateEmployeeInput {
+    id: ID!
+    active: Boolean
+    department: DepartmentInput
+}
+
+type Query {
+    GetAllEmployees: [Employee]
+    GetEmployeeById(id: ID!): Employee
+    GetAllDepartments: [Department]
+    GetDepartmentHistory(employeeId: ID!): [DepartmentHistory]
+}
+
+type Mutation {
+    UpdateEmployee(employee: UpdateEmployeeInput!): Employee
+    DeleteEmployee(id: ID!): Boolean
+}
+
+type DepartmentHistory {
+    #id: ID!
+    department: Department
+    employee: Employee
+    changeDate: Date
+}
+
+type Department {
+    id: ID!
+    name: String
+}
+type Employee {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    hireDate: Date!
+    phone: String
+    address: String
+    department: Department
+    avatarUrl: String
+    active: Boolean
+    departmentHistory: [DepartmentHistory]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "number8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "server:start": "node --import=tsx --env-file=packages/server/.env packages/server/server.mjs",
+    "client:build": "yarn workspace client run build",
+    "client:start": "yarn client:build && yarn workspace client run start",
+    "client:start:dev": "yarn workspace client run dev"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "graphql-scalars": "^1.23.0",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "turbo": "^2.1.2",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "yarn": ">=4.0.0",
+    "node": ">=20"
+  },
+  "packageManager": "yarn@v4.5.0"
+}
